@@ -125,7 +125,7 @@ while True:
     event, values = window.read()
     # print(window.__dict__)
     LastPos().save_pos(GetLocation(window.Title))
-    print(f"イベント:{event}/値:{values}")
+    # print(f"イベント:{event}/値:{values}")
 
     if event == sg.WIN_CLOSED or event == "終了":
         st.close()
